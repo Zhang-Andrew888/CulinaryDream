@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+.mySwiper { overflow: visible !important; }
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    width: 36px; height: 36px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    top: 40%;
+    transition: all 0.2s;
+}
+.mySwiper .swiper-button-prev:hover,
+.mySwiper .swiper-button-next:hover {
+    background: #f97316;
+    box-shadow: 0 4px 14px rgba(249,115,22,0.4);
+}
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+    font-size: 12px; font-weight: 800; color: #1a1a1a;
+}
+.mySwiper .swiper-button-prev:hover::after,
+.mySwiper .swiper-button-next:hover::after { color: white; }
+
+.swiper-slide { transition: transform 0.3s ease; }
+.swiper-slide:hover { transform: translateY(-4px); }
